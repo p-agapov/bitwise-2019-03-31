@@ -20,6 +20,8 @@ public interface Permissions {
      */
     void merge(Permissions other) throws IllegalArgumentException;
 
+    Type getType();
+
     enum Type {
         GUEST,
         EDITOR,
